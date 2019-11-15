@@ -1,0 +1,23 @@
+<!--pages/Verification_Conversion_Code/Verification_Conversion_Code.wxml-->
+<view class="head">
+
+  <input class="ipt" placeholder="请输入用户兑换码" placeholder-class="ipt_class"></input>
+<view class="btn">查询</view>
+</view>
+<image class="baga_img" src="../../img/code.png"></image>
+
+
+<view class="shop">
+<view class="shop_wenben">兑换5元话费券</view>
+<view class="shop_wenben2">兑换码：abable234</view>
+<view class="shop_wenben3">生成时间：2019-9-24</view>
+<view class="shop_wenben4">是否已兑换：否</view>
+</view>
+
+<view class="btn_s">用户已完成兑换，请点击这里</view>
+
+
+
+
+
+

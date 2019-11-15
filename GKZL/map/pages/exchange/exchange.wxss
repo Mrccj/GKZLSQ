@@ -1,0 +1,81 @@
+/* pages/exchange/exchange.wxss */
+.title{
+  color: #0DA558;
+  font-size: 32rpx;
+  width: 100%;
+  text-align: center;
+  margin: 60rpx auto;
+}
+.box{
+  width: 622rpx;
+  height: 296rpx;
+  box-shadow: 0 0 5px #ddd;
+  margin: 0 auto;
+  border-radius: 32rpx;
+  position: relative;
+}
+.name{
+  width: 100%;
+  font-size: 28rpx;
+  color: #333;
+  padding-top: 60rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.btn1{
+  background: #0DA558;
+  font-size: 24rpx;
+  color: #fff;
+  margin: 0 auto;
+  width: 90rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+text-align: center;
+border-radius: 12rpx;
+
+}
+
+.wenben{
+  font-size: 24rpx;
+  color: #555;
+  width: 100%;
+  text-align: center;
+  margin-top: 60rpx;
+}
+.box_two{
+  width: 622rpx;
+  height: 588rpx;
+  margin: 64rpx auto;
+  box-shadow: 0 0 5px #ddd;
+  border-radius: 32rpx;
+}
+.name2{
+  color: #555;
+  font-size: 28rpx;
+  text-align: center;
+  width: 100%;
+ padding: 32rpx 0;
+}
+.erweima_img{
+  width: 400rpx;
+  height: 400rpx;
+  display: block;
+  margin: 0 auto;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  
+margin-top: 10rpx;
+}
+.wenben3{
+  font-size: 28rpx;
+  color: #555;
+}
+.po_r{
+  position: relative;
+  left: 10%;
+}

@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="logo">
+    <image class="logo_img" src="../../img/look-map.png"></image>
+  </view>
+
+  <view class="ipt_box ma_b_22">
+    <view class="ipt_img">
+      <image class="ipt_image" src="../../img/tou2.png"></image>
+    </view>
+    <input class="ipt" name="nick" placeholder="请输入用户名" placeholder-class="ipt_per" type="text"></input>
+  </view>
+
+  <view class="ipt_box ma_b_82">
+    <view class="ipt_img">
+      <image class="ipt_image" src="../../img/suo2.png"></image>
+    </view>
+    <input class="ipt" placeholder="请输入密码" placeholder-class="ipt_per" type="password" name="password"></input>
+  </view>
+
+
+  <button class="btn" formType="submit">立即登录</button>
+</form>

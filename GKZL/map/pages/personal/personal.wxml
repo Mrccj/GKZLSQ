@@ -1,0 +1,14 @@
+<view class='container'>
+
+  <button class='userInfo' bindgetuserinfo='getUser' open-type='getUserInfo'>
+    <image src='{{avatarUrl}}' class='userImg'></image>
+    <text class='textStyle'>{{nickName}}</text>
+  </button>
+
+  <view class='userInfo'>
+      <text>关于作者</text>
+  
+  </view>
+
+
+</view>

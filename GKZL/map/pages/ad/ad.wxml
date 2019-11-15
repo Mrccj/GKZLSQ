@@ -1,0 +1,74 @@
+<view class="page">
+  
+
+  <!--顶部导航栏-->
+<view class="scroll_box"> 
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;height:48px;">
+<!--每个view到/view为主题对应内容-->
+       <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav"  id="1">宿舍楼</view> 
+        
+
+    <view  class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav"  id="2">教学区</view>
+
+    <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav"   id="3">快递点</view>
+
+     <view class="tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav"   id="4">运动场</view>
+
+     <view class="tab-item {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav"   id="5">食堂</view>
+
+     <view class="tab-item {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav"   id="6">其他</view>
+    
+ </scroll-view>
+
+     
+  
+  </view>
+
+
+  <!--内容主体-->
+
+   <map id='map' longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" bindmarkertap="gotohere" style="width:100%;height:100vh" scale='{{scale}}' show-location show-compass enable-overlooking >
+
+   <cover-view class='atest'>
+     <cover-view>J 教学楼</cover-view>
+     <cover-view>S 实训楼</cover-view>
+     <cover-view>G 教师公寓</cover-view>
+   </cover-view>
+
+
+    <cover-view class="controls">
+      <cover-view class='about' bindtap='toggleDialog' >
+        <cover-image class="img" src='../images/about.png'></cover-image>
+      </cover-view>
+      <cover-view class='school' bindtap='getSchool'>
+        <cover-image class="img" src='../images/school.png'></cover-image>
+      </cover-view>
+      <cover-view class='round-click' bindtap='getMap'>
+        <cover-image class="img" src='../images/dw.png'></cover-image>
+      </cover-view>
+  
+    </cover-view>
+    
+  </map>
+
+
+
+
+
+
+
+
+
+   
+</view>
+
+
+
+
+
+
+
+
+
+
+

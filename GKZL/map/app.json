@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Exchange_records/Exchange_records",
+    "pages/exchange/exchange",
+    "pages/Exchange_area/Exchange_area",
+    "pages/Verification_Conversion_Code/Verification_Conversion_Code",
+    
+    "pages/Attendance_record/Attendance_record",
+    "pages/login/login",
+    
+    "pages/ad/ad",
+    "pages/map/map",
+    
+    "pages/web/web"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "广科找路神器将会获取你的位置信息"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "广科找路神器",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+
+"tabBar": {
+  "borderStyle": "white",
+  "list": [
+      {
+        "pagePath": "pages/ad/ad",
+        "text": "广科导航",
+        "iconPath": "pages/images/dh.png",
+        "selectedIconPath": "pages/images/dhC.png"
+      },
+    {
+      "pagePath": "pages/map/map",
+      "text": "广科动态",
+      "iconPath": "pages/images/tz.png",
+      "selectedIconPath": "pages/images/tz_C.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "生活福利",
+      "iconPath": "pages/images/home.png",
+      "selectedIconPath": "pages/images/homeC.png"
+    }
+  ]
+},
+
+
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,68 @@
+/* pages/Exchange_records/Exchange_records.wxss */
+.shop{
+  width: 686rpx;
+  height: 308rpx;
+  box-shadow: 0 0 5px #ddd;
+  margin: 32rpx auto;
+  border-radius: 12rpx;
+  overflow: hidden;
+  position: relative;
+
+}
+.shop_head{
+  height: 88rpx;
+  width: 622rpx;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head_left{
+  font-size: 28rpx;
+  color: #555;
+}
+.shop_time{
+  font-size: 24rpx;
+  color: #333;
+  width: 622rpx;
+  margin:20rpx auto;
+  margin-bottom: 0rpx;
+}
+.btn{
+  background: #0DA558;
+  font-size: 24rpx;
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 12rpx;
+  position: absolute;
+  bottom: 30rpx;
+  right: 32rpx;
+}
+.wenben{
+  
+  font-size: 24rpx;
+  color: #555;
+  padding: 10rpx;
+  border-radius: 12rpx;
+  position: absolute;
+  bottom: 30rpx;
+  right: 160rpx;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

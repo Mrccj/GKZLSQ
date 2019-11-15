@@ -1,0 +1,75 @@
+<!--pages/index/index.wxml-->
+<view class="box">
+    <view class="boxTop">
+    <view class="vip">
+      <image src="../../img/vip.png" class="vip_img"></image>
+    </view>
+      <view wx:if="{{loginType}}" class="img_box">
+        <image src="{{avatarUrl}}" class="img_url"></image>
+        <view class="img_content">
+          <view>亲爱的{{username}}同学</view>
+          <view>您今日还没有签到哦~</view>
+        </view>
+      </view>
+      <view wx:else="{{loginType}}" class="img_box">
+        <image src="../../img/touxiang.png" class="img_url"></image>
+        <view class="img_content">
+        <view>亲爱的同学，您还没有登录哦~</view>
+          <view>点击下方授权登录哦~</view>
+        </view>
+      </view>
+    
+      <view wx:if="{{loginType}}" class="round" bindtap="go_Exchange_area" data-id="0">
+        我要签到
+      </view>
+      <button wx:else="{{loginType}}" bindgetuserinfo="getUserInfo" open-type="getUserInfo" class="roundButton" data-id="0">
+        我要登录
+      </button>
+    </view>
+
+    <view class="ba_clock"></view>
+     <view class="div_one">
+            <view class="wenben" bindtap="go_Attendance_record">查看签到记录</view>
+            <view class="wenben" bindtap="go_Exchange_records">查看兑换记录</view>
+        </view>
+    <view class="boxBottom">
+       <view class="title">签到累计，达天兑礼物</view>
+      <view class="backga_box">
+        <view class="backga" bindtap="go_Exchange_area" data-id="2">
+          <image src="../../img/day2.png" class="back_img"></image>
+          <view class="fild">
+            <view>
+              <view class="f_wenben1">2天</view>
+              <view class="f_wenben2">兑换专区</view>
+            </view>
+          </view>
+          <view class="mask" hidden="{{flag}}" catchtap="show_tc"></view>
+        </view>
+        <view class="backga" bindtap="go_Exchange_area" data-id="7">
+         <image src="../../img/day7.png" class="back_img"></image>
+          <view class="fild">
+            <view>
+              <view class="f_wenben1">7天</view>
+              <view class="f_wenben2">兑换专区</view>
+            </view>
+          </view>
+          <view class="mask" hidden="{{flag}}" catchtap="show_tc"></view>
+        </view>
+        <view class="backga" bindtap="go_Exchange_area" data-id="15">
+         <image src="../../img/day15.png" class="back_img"></image>
+          <view class="fild">
+            <view>
+              <view class="f_wenben1">15天</view>
+              <view class="f_wenben2">兑换专区</view>
+            </view>
+          </view>
+        <view class="mask" hidden="{{flag}}" catchtap="show_tc"></view>
+        </view>
+      
+      </view>
+    </view>
+
+<view><button bindtap="insert">插入</button></view>
+<view><button bindtap='sum'>求和</button></view>
+<!-- <view><button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取openId</button></view>     -->
+</view>

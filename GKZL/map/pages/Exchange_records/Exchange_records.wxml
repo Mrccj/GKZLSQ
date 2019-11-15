@@ -1,0 +1,13 @@
+<!--pages/Exchange_records/Exchange_records.wxml-->
+<block wx:for="{{shop_list}}" wx:key="index">
+<view class="shop">
+<view class="shop_head">
+  <view class="head_left">兑换5元话费券</view>
+  <view class="head_left">待兑换</view>
+</view>
+<view class="shop_time">兑换时间：2019-5-23   23:00 </view>
+<view class="shop_time">消耗天数：2天 </view>
+<view class="wenben" bindtap="copy" data-text="要复制的内容">点击复制兑换码</view>
+<view class="btn" bindtap="dete" data-id="{{index}}">取消兑换</view>
+</view>
+</block>

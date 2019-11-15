@@ -1,0 +1,59 @@
+<!--pages/Attendance_record/Attendance_record.wxml-->
+<view class="ba_img" style=" background-image: url('../../img/qiandao.png')">
+
+  <view class="box">
+    <view class="box_div">
+      <view class="box_div2">
+        <view class="name">累计签到</view>
+        <view class="day">{{signAll}}天</view>
+      </view>
+    </view>
+    <view class="xian"></view>
+    <view class="box_div">
+      <view class="box_div2">
+        <view class="name">本月签到</view>
+        <view class="day">5天</view>
+      </view>
+    </view>
+    <view class="xian"></view>
+    <view class="box_div">
+      <view class="box_div2">
+        <view class="name">在平台时间</view>
+        <view class="day">365天</view>
+      </view>
+    </view>
+
+
+  </view>
+
+</view>
+
+
+<view class="box_one">
+  <view class="tltle_box">
+        <picker mode="date" value="{{date}}" bindchange="bindDateChange" fields='year' fields='month'>
+    <view class="title_div">
+      <view class="title_time">
+  
+          <view class="picker">
+           {{date}}
+          </view>
+        
+      </view>
+      <image class="title_img" src="../../img/san.png"></image>
+    </view>
+    </picker>
+  </view>
+
+  <view class="{{state==1?'list_box':'list_auto'}}">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="content">
+        <view class="content_left">2019-10-20 23:00</view>
+        <view class="content_left">签到成功</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="more " bindtap="change" wx:if="{{state==1}}">查看更多</view>
+
+</view>

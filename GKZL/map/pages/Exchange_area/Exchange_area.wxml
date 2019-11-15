@@ -1,0 +1,51 @@
+<!--pages/Exchange_area/Exchange_area.wxml-->
+<view class="vip_img">
+  <image class="vip_image" src="../../img/vip.png"></image>
+</view>
+<view class="head">
+  <view class="head_div"><text hidden="{{canshu==0}}">签到{{canshu}}天兑换专区</text></view>
+  <image src="../../img/jiantou.png" class="you_img"></image>
+</view>
+
+<block wx:for="{{shop_list}}" wx:key="index">
+<view class="shop">
+  <view class="shop_head">
+    <view class="shop_wenben">中国移动5元话费券</view>
+    <view class="btn" bindtap="block_show">兑换</view>
+  </view>
+  <view class="shop_content">使用描述：兑换将兑换码发给客服，到10086个人中心兑换即可
+兑换5元话费有效期30天</view>
+</view>
+</block>
+
+
+
+<view class="mark {{state==1?'dis_none':''}}" bindtap="mark_hide"></view>
+<view class="mark_block {{state==1?'dis_none':''}}">
+<view class="por">
+  <view class="block_title">是否确认申请兑换</view>
+  <view class="block_content">中国移动5元话费券</view>
+  <view class="btn_box">
+      <view class="block_btn ba_c1" bindtap="cancel">取消</view>
+      <view class="block_btn ba_c2" bindtap="sure">确定</view>
+  </view>
+</view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

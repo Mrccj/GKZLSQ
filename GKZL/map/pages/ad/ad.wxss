@@ -1,0 +1,164 @@
+.page {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #777;
+
+}
+
+.swiper {
+  height: 1100px;
+  background: #dfdfdf;
+}
+
+  /* 该部分是顶部nav左右滑动标签*/
+
+.on {
+
+  color: blue;
+ line-height: 160%;
+  border-bottom: 5rpx solid blue;
+}
+.scroll_box{
+width: 100%;
+height: 15%;
+overflow: hidden;
+background: #fff;
+white-space: nowrap;
+}
+.tab-item{
+width: 21.5%;
+height: 32px;
+margin-right: 3rpx;
+display: inline-block;
+text-align: center;
+font-size: 15px;
+color: #777;
+padding-top: 10px;
+  /* 顶部nav结束*/
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+
+ /* map引导过来的地图*/
+ /* pages/map/map.wxss */
+
+.view {
+  width: 100%;
+  height: 100%;
+    display: flex;
+    align-items: center;
+  
+}
+
+.controls {
+  border: 1;
+  position: absolute;
+  width: 50px;
+  bottom: 8%;
+  left: 85%;
+  height: 200px;
+}
+
+.atest {
+  border: 1;
+  position: absolute;
+  width: 100px;
+  top: 68%;
+  height: 24%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.atest cover-view {
+  line-height: 220%;
+  font-size: 15px;
+  margin-top:5%;
+  color: #fff;
+}
+.round-click, .school, .about {
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-top: 20px;
+  align-content: center;
+}
+
+.img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  margin: 5px;
+}
+
+.zan-dialog_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  /* 设置阴影半透明背景如： background: rgba(0, 0, 0, 0.4); */
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.zan-dialog_container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
+  /* 弹窗布局宽 */
+  width: 560rpx;
+  /* 弹窗布局高，与下面弹出距离transform有关 */
+  height: 720rpx;
+  background: #f8f8f8;
+  /* 弹框弹出距离，与弹框布局高度有关，如300%表示弹起距离为3倍弹窗高度 */
+  transform: translateY(300%);
+  transition: all 0.4s ease;
+  z-index: 12;
+  border-radius: 20rpx;
+  /* 弹框的悬浮阴影效果，如不需要可注释该行 */
+  /* box-shadow: 0px 3px 3px 2px gainsboro; */
+}
+
+.zan-dialog-show .zan-dialog_container {
+  transform: translateY(0);
+}
+
+.zan-dialog-show .zan-dialog_background {
+  display: block;
+}
+
+.swiper_dialog,.swiper_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.button_close{
+  width:70rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%; 
+  background: rgba(0,0,0,0);
+  border: 5rpx solid #fff;
+  color: white;
+  margin-top: 10rpx;
+}
+
+button::after { 
+  border: none; 
+}
+

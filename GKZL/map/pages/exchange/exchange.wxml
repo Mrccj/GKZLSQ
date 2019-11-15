@@ -1,0 +1,31 @@
+<!--pages/exchange/exchange.wxml-->
+
+<view class="title">恭喜您，申请兑换成功！</view>
+
+
+<view  class="box">
+<view class="name">兑换码：abcea23434</view>
+<view class="btn1" bindtap="copy" data-index="abcea23434">复制</view>
+
+<view class="wenben">将兑换码发给客服，进行兑换 </view>
+</view>
+
+
+
+<view class="box_two">
+    <view class="name2">如果你还未添加客服，可以扫码添加</view>
+    <image class="erweima_img" src="../../img/erweima.png"></image>
+    <view class="foot">
+    
+      <view  class="wenben3">客服微信号：hsh-mg</view>
+      <view class="btn1 po_r" data-text="hsh-mg" bindtap="copy">复制</view>
+    </view>
+
+</view>
+
+
+<view class="btn5" bindtap="save">保存二维码到手机相册</view>
+
+
+
+

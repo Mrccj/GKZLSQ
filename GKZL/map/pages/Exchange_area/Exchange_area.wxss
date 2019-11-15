@@ -1,0 +1,151 @@
+/* pages/Exchange_area/Exchange_area.wxss */
+page{
+  background: #F5F4F9;
+}
+
+.vip_img{
+  width: 686rpx;
+  height: 240rpx;
+  padding: 32rpx;
+  background: #fff;
+}
+.vip_image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 32rpx;
+  overflow: hidden;
+}
+.head{
+   width: 686rpx;
+  height: 88rpx;
+  padding: 0 32rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+.head_div{
+  color: #333;
+  font-size: 28rpx;
+}
+.you_img{
+  width: 24rpx;
+  height: 24rpx;
+  display: block;
+}
+.shop{
+  position: relative;
+  padding: 24rpx 32rpx;
+  background: #fff;
+  margin-bottom: 24rpx;
+}
+.shop_head{
+  width: 100%;
+  height: 40rpx;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24rpx;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 24rpx;
+}
+.shop_wenben{
+  font-size: 28rpx;
+  color: #333;
+}
+.btn{
+  background: #0DA558;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 8rpx 32rpx;
+  position: absolute;
+  border-radius: 12rpx;
+  right: 32rpx;
+}
+.shop_content{
+  height: auto;
+  color: #333;
+  font-size: 24rpx;
+}
+
+
+.mark{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+.mark_block{
+  position: fixed;
+  z-index: 3;
+  width: 540rpx;
+  height: 316rpx;
+  left: 105rpx;
+  background: #fff;
+  border-radius: 32rpx;
+  top: 350rpx;
+  overflow: hidden;
+}
+.block_title{
+  font-size: 32rpx;
+  width: 100%;
+  text-align: center;
+  color: #333;
+
+  padding: 40rpx 0;
+}
+.block_content{
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #555;
+  padding-bottom: 54rpx;
+  padding-top: 10rpx;
+}
+.btn_box{
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.block_btn{
+  width: 50%;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+}
+.ba_c1{
+background: rgba(49, 146, 91, 0.781);
+}
+.ba_c2{
+background: #0DA558;
+}
+
+.dis_none{
+  display: none;
+}
+.por{
+  position: relative;
+  width: 540rpx;
+  height: 316rpx;
+}
+
+
+
+
+
+
+
+

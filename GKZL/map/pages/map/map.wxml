@@ -1,0 +1,7 @@
+<!--pages/map/map.wxml-->
+<text class="text">
+
+校园最新大大小小动态，通知，尽在于此，尽情期待
+</text>
+  <!-- 弹出层内容，其中的“我知道”中绑定让弹出层消失的函数：bindtap="hide" -->
+      
